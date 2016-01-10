@@ -8,6 +8,7 @@ class UrlTest extends PHPUnit_Framework_TestCase {
   {
     $nacho = new Url;
     $this->assertTrue($nacho->hasCheese());
+	$this->assertFalse($nacho->hasCheese(false));
   }
  
 }
